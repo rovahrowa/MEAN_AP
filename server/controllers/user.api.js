@@ -27,13 +27,13 @@ router.get("/", function(req, res) {
  res.send("error");
  return;
  }
- res.send("created");
+ res.send("User Creation Succesfull");
  });
 }).put("/:id", function(req, res) {
  var id = req.params.id;
  var obj = req.body;
 
- user.findByIdAndUpdate(id, { name: obj.name, contactNo: obj.contactNo, address: obj.address }, 
+ user.findByIdAndUpdate(id, { name: obj.name, contactNo: obj.contactNo, address: obj.address },
 function(err) {
  if (err) {
  res.send("error");

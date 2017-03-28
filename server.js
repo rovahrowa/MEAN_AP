@@ -5,7 +5,6 @@ var express = require('express'),
  routes = require('./server/routes/web'), //web routes
  apiRoutes = require('./server/routes/api'), //api routes
  connection = require("./server/config/db"); //mongodbconnection
- //var bodyParser = require('body-parser');
 
 // creating express server
 var app = express();
